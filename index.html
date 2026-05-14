@@ -110,13 +110,18 @@
 
 
     <aside id="carrinho-painel" class="cart-sidebar">
-        <div class="cart-header"><h3>MEU CARRINHO</h3><button onclick="toggleCarrinho()">X</button></div>
+        <div class="cart-header">
+            <h3>MEU CARRINHO</h3>
+            <button onclick="toggleCarrinho()">X</button>
+        </div>
         <div id="carrinho-itens-lista"></div>
-        <div style="padding: 20px;">
+        <div class="cart-footer">
             <p>Total: <strong id="carrinho-subtotal">R$ 0,00</strong></p>
-            <button class="btn-login" style="width:100%; margin-top:10px;" onclick="window.location.href='pagamento.html'">FINALIZAR COMPRA</button>
+            <button class="btn-login" onclick="window.location.href='pagamento.html'">FINALIZAR PEDIDO</button>
         </div>
     </aside>
+
     <script src="js/script.js"></script>
 </body>
+</html>
 </html>
