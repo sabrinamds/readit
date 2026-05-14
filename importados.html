@@ -2,20 +2,18 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Importados | ReadIt</title>
+    <title>ReadIt Store | Sua Próxima Leitura</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
     <header class="header-topo">
         <div class="container header-flex">
             <h1 class="titulo-site" onclick="window.location.href='index.html'">
-                READ<span class="titulo-site-span">IT</span>
-            </h1>
+                    READ<span class="titulo-site-span">IT</span>
+                </h1>
             <div class="busca-container">
-                <input type="text" placeholder="Pesquisar livros importados..." class="input-busca">
+                <input type="text" placeholder="Pesquisar sua próxima leitura..." class="input-busca">
                 <button class="btn-busca">🔍</button>
             </div>
             <div class="acoes-usuario">
@@ -27,193 +25,98 @@
         </div>
     </header>
 
-    <nav class="nav-sub">
-        <div class="container nav-flex">
-            <a href="nacionais.html">NACIONAIS</a>
-            <a href="internacionais.html">INTERNACIONAIS</a>
-            <a href="ebooks.html">E-BOOKS</a>
-            <a href="academicos.html">ACADÊMICOS</a>
-            <a href="importados.html">IMPORTADOS</a>
-            <a href="papelaria.html">PAPELARIA</a>
-            <a href="ofertas.html">LIVROS EM OFERTA</a>
-        </div>
-    </nav>
+   <nav class="nav-sub">
+    <div class="container nav-flex">
+        <a href="nacionais.html">NACIONAIS</a>
+        <a href="internacionais.html">INTERNACIONAIS</a>
+        <a href="ebooks.html">E-BOOKS</a>
+        <a href="academicos.html">ACADÊMICOS</a>
+        <a href="importados.html">IMPORTADOS</a>
+        <a href="papelaria.html">PAPELARIA</a>
+        <a href="ofertas.html">LIVROS EM OFERTA</a>
+    </div>
+   </nav>
 
-    <main class="container">
-        <h2 class="sessao-titulo">IMPORTADOS</h2>
-        
-        <div class="grid-ebooks">
+    <main class="container layout-grid">
+        <section class="vitrine">
+            <h2 class="sessao-titulo">SUCESSO EM VENDAS</h2>
+            <div class="book-card-grid">
+                <article class="book-card">
+                    <img src="https://m.media-amazon.com/images/I/91XBIxb9c4L.jpg" class="book-cover">
+                    <h3>Contos de Fadas</h3>
+                    <span class="price">R$ 54,90</span>
+                    <button class="btn-add" onclick="adicionarAoCarrinho('Contos de Fadas', 54.90)">ADICIONAR À SACOLA</button>
+                </article>
+
+                 <article class="book-card">
+                    <img src="https://m.media-amazon.com/images/I/71gXpS2PAgL._AC_UF1000,1000_QL80_.jpg" class="book-cover">
+                    <h3>Torto Arado</h3>
+                    <p>Itamar Vieira Junior</p>
+                    <div class="book-details">
+                        <span class="price">R$ 49,90</span>
+                        <span class="rating">⭐ 4.9</span>
+                    </div>
+                    <button class="btn-add" onclick="adicionarAoCarrinho('Torto Arado', 49.90)">ADICIONAR À SACOLA</button>
+                </article>
+
+                <article class="book-card">
+                    <img src="https://m.media-amazon.com/images/I/81T6Suzjj8L._AC_UF1000,1000_QL80_.jpg" class="book-cover">
+                    <h3>A Mandíbula de Caim</h3>
+                    <p>Edward Powys Mathers</p>
+                    <div class="book-details">
+                        <span class="price">R$ 39,90</span>
+                        <span class="rating">⭐ 4.5</span>
+                    </div>
+                    <button class="btn-add" onclick="adicionarAoCarrinho('A Mandíbula de Caim', 39.90)">ADICIONAR À SACOLA</button>
+                </article>
+
+                <article class="book-card">
+                    <img src="https://m.media-amazon.com/images/I/81SZjMOvHxL._UF1000,1000_QL80_.jpg" class="book-cover">
+                    <h3>Tudo é Rio</h3>
+                    <p>Carla Madeira</p>
+                    <div class="book-details">
+                        <span class="price">R$ 35,00</span>
+                        <span class="rating">⭐ 4.7</span>
+                    </div>
+                    <button class="btn-add" onclick="adicionarAoCarrinho('Tudo é Rio', 35.00)">ADICIONAR À SACOLA</button>
+                </article>
             
-            <article class="book-card">
-                <img src="" class="book-cover">
-                <h3>The Perfect Match</h3>
-                <p>Lyla Mars</p>
-                <div class="book-details"><span class="price">R$ 94,90</span></div>
-                <button class="btn-add" onclick="adicionarAoCarrinho('The Perfect Match', 94.90)">ADICIONAR</button>
-            </article>
+            </div>
+        </section>
 
-            <article class="book-card">
-                <img src="" class="book-cover">
-                <h3>Book Lovers</h3>
-                <p>Emily Henry</p>
-                <div class="book-details"><span class="price">R$ 72,00</span></div>
-                <button class="btn-add" onclick="adicionarAoCarrinho('Book Lovers', 72.00)">ADICIONAR</button>
-            </article>
-
-            <article class="book-card">
-                <img src="" class="book-cover">
-                <h3>Happy Place</h3>
-                <p>Emily Henry</p>
-                <div class="book-details"><span class="price">R$ 79,90</span></div>
-                <button class="btn-add" onclick="adicionarAoCarrinho('Happy Place', 79.90)">ADICIONAR</button>
-            </article>
-
-            <article class="book-card">
-                <img src="" class="book-cover">
-                <h3>Friends, Lovers, and the Big Terrible Thing</h3>
-                <p>Matthew Perry</p>
-                <div class="book-details"><span class="price">R$ 115,00</span></div>
-                <button class="btn-add" onclick="adicionarAoCarrinho('Friends, Lovers, and the Big Terrible Thing', 115.00)">ADICIONAR</button>
-            </article>
-
-            <article class="book-card">
-                <img src="" class="book-cover">
-                <h3>I Want to Die but I Want to Eat Tteokbokki</h3>
-                <p>Baek Sehee</p>
-                <div class="book-details"><span class="price">R$ 92,00</span></div>
-                <button class="btn-add" onclick="adicionarAoCarrinho('I Want to Die but I Want to Eat Tteokbokki', 92.00)">ADICIONAR</button>
-            </article>
-
-            <article class="book-card">
-                <img src="" class="book-cover">
-                <h3>Almond</h3>
-                <p>Won-pyung Sohn</p>
-                <div class="book-details"><span class="price">R$ 84,90</span></div>
-                <button class="btn-add" onclick="adicionarAoCarrinho('Almond', 84.90)">ADICIONAR</button>
-            </article>
-
-            <article class="book-card">
-                <img src="" class="book-cover">
-                <h3>The Perks of Being a Wallflower</h3>
-                <p>Stephen Chbosky</p>
-                <div class="book-details"><span class="price">R$ 68,00</span></div>
-                <button class="btn-add" onclick="adicionarAoCarrinho('The Perks of Being a Wallflower', 68.00)">ADICIONAR</button>
-            </article>
-
-            <article class="book-card">
-                <img src="" class="book-cover">
-                <h3>Wicked</h3>
-                <p>Gregory Maguire</p>
-                <div class="book-details"><span class="price">R$ 95,90</span></div>
-                <button class="btn-add" onclick="adicionarAoCarrinho('Wicked', 95.90)">ADICIONAR</button>
-            </article>
-
-            <article class="book-card">
-                <img src="" class="book-cover">
-                <h3>Flowers for Algernon</h3>
-                <p>Daniel Keyes</p>
-                <div class="book-details"><span class="price">R$ 72,00</span></div>
-                <button class="btn-add" onclick="adicionarAoCarrinho('Flowers for Algernon', 72.00)">ADICIONAR</button>
-            </article>
-
-            <article class="book-card">
-                <img src="" class="book-cover">
-                <h3>Forgive Me, Leonard Peacock</h3>
-                <p>Matthew Quick</p>
-                <div class="book-details"><span class="price">R$ 65,90</span></div>
-                <button class="btn-add" onclick="adicionarAoCarrinho('Forgive Me, Leonard Peacock', 65.90)">ADICIONAR</button>
-            </article>
-
-            <article class="book-card">
-                <img src="" class="book-cover">
-                <h3>Sunrise on the Reaping</h3>
-                <p>Suzanne Collins</p>
-                <div class="book-details"><span class="price">R$ 99,00</span></div>
-                <button class="btn-add" onclick="adicionarAoCarrinho('Sunrise on the Reaping', 99.00)">ADICIONAR</button>
-            </article>
-
-            <article class="book-card">
-                <img src="" class="book-cover">
-                <h3>Little Women</h3>
-                <p>Louisa May Alcott</p>
-                <div class="book-details"><span class="price">R$ 58,00</span></div>
-                <button class="btn-add" onclick="adicionarAoCarrinho('Little Women', 58.00)">ADICIONAR</button>
-            </article>
-
-            <article class="book-card">
-                <img src="" class="book-cover">
-                <h3>Battle Royale</h3>
-                <p>Koushun Takami</p>
-                <div class="book-details"><span class="price">R$ 105,00</span></div>
-                <button class="btn-add" onclick="adicionarAoCarrinho('Battle Royale', 105.00)">ADICIONAR</button>
-            </article>
-
-            <article class="book-card">
-                <img src="" class="book-cover">
-                <h3>The Seven Husbands of Evelyn Hugo</h3>
-                <p>Taylor Jenkins Reid</p>
-                <div class="book-details"><span class="price">R$ 82,90</span></div>
-                <button class="btn-add" onclick="adicionarAoCarrinho('The Seven Husbands of Evelyn Hugo', 82.90)">ADICIONAR</button>
-            </article>
-
-            <article class="book-card">
-                <img src="" class="book-cover">
-                <h3>It Ends with Us</h3>
-                <p>Colleen Hoover</p>
-                <div class="book-details"><span class="price">R$ 78,00</span></div>
-                <button class="btn-add" onclick="adicionarAoCarrinho('It Ends with Us', 78.00)">ADICIONAR</button>
-            </article>
-
-            <article class="book-card">
-                <img src="" class="book-cover">
-                <h3>A Court of Thorns and Roses</h3>
-                <p>Sarah J. Maas</p>
-                <div class="book-details"><span class="price">R$ 96,50</span></div>
-                <button class="btn-add" onclick="adicionarAoCarrinho('A Court of Thorns and Roses', 96.50)">ADICIONAR</button>
-            </article>
-
-            <article class="book-card">
-                <img src="" class="book-cover">
-                <h3>The Midnight Library</h3>
-                <p>Matt Haig</p>
-                <div class="book-details"><span class="price">R$ 75,00</span></div>
-                <button class="btn-add" onclick="adicionarAoCarrinho('The Midnight Library', 75.00)">ADICIONAR</button>
-            </article>
-
-            <article class="book-card">
-                <img src="" class="book-cover">
-                <h3>Normal People</h3>
-                <p>Sally Rooney</p>
-                <div class="book-details"><span class="price">R$ 74,90</span></div>
-                <button class="btn-add" onclick="adicionarAoCarrinho('Normal People', 74.90)">ADICIONAR</button>
-            </article>
-
-        </div>
-
-        <div class="area-ver-mais">
-            <button class="btn-login btn-carregar">VER MAIS LIVROS</button>
-        </div>
+        <aside class="sidebar-categorias">
+            <h2 class="sessao-titulo">CATEGORIAS</h2>
+            <div class="botoes-categorias">
+                <button>Literatura e Ficção</button>
+                <button>Romance</button>
+                <button>Infantojuvenil</button>
+                <button>Policial, Suspense e Mistério</button>
+                <button>HQs e Mangás</button>
+                <button>Fantasia e Horror</button>
+                <button>Biografias</button>
+                <button>Autoajuda</button>
+                <button>Gastronomia e Culinária</button>
+            </div>
+            <a href="#" class="link-ver-mais">Ver mais >>></a>
+        </aside>
     </main>
 
     <footer class="footer-comum">
-        <div class="container">
-            <h3>FALE CONOSCO</h3>
-            <p>+55 (21) 99876-5432 ♦ faleconosco@readit.com.br</p>
-        </div>
-    </footer>
+    <div class="container">
+        <h3>FALE CONOSCO</h3>
+        <p>+55 (21) 99876-5432 ♦ faleconosco@readit.com.br</p>
+    </div>
+</footer>
+
 
     <aside id="carrinho-painel" class="cart-sidebar">
-        <div class="cart-header">
-            <h3>MEU CARRINHO</h3>
-            <button onclick="toggleCarrinho()">X</button>
-        </div>
+        <div class="cart-header"><h3>MEU CARRINHO</h3><button onclick="toggleCarrinho()">X</button></div>
         <div id="carrinho-itens-lista"></div>
-        <div class="cart-footer">
+        <div style="padding: 20px;">
             <p>Total: <strong id="carrinho-subtotal">R$ 0,00</strong></p>
-            <button class="btn-login" onclick="window.location.href='pagamento.html'">FINALIZAR PEDIDO</button>
+            <button class="btn-login" style="width:100%; margin-top:10px;" onclick="window.location.href='pagamento.html'">FINALIZAR COMPRA</button>
         </div>
     </aside>
-
     <script src="js/script.js"></script>
 </body>
 </html>
